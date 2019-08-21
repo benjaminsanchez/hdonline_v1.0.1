@@ -314,7 +314,7 @@ class SystemEdit  extends CI_Controller {
 					endforeach;
 					
 				
-					
+					$data['localizacion']= localizacion();
 					if ($this->Systemedit_model->insert_data($load,$data)):	
 						$insertid = @$this->Systemedit_model->get_max_field($incrementkey,$load);
 						

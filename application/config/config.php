@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments. 
 |
 */
-date_default_timezone_set("America/Santiago");
+date_default_timezone_set("America/Santiago");/*
 if ($_SERVER['SERVER_NAME'] != "hunterdouglasonline.cl"):
 //	header("location: https://hunterdouglasonline.cl");
 endif;
@@ -26,7 +26,7 @@ $basefolder = '/';
 $folder = $basefolder.''; //sin slash final
 $upload_folder = 'uploads'; 
 
-$config['base_url'] = 'https://'.$_SERVER['SERVER_NAME'].$folder."/";
+$config['base_url'] = 'http://'.$_SERVER['SERVER_NAME'].$folder."/";
 $config['abs_path'] =  $_SERVER['DOCUMENT_ROOT'].$folder;
 $config['base_upload_fldr'] =  $basefolder.$upload_folder;
 $config['upload_folder'] =  $upload_folder;
@@ -42,7 +42,7 @@ $config["ext_image"] = "|jpg|png|gif|bmp";
 
 
 $config["tablas_permitidas"] = array('administradores','alertas','alertas_contenidos','categorias','categorias_tipo','distribuidores', 'distribuidores_usuarios', 'distribuidores_usuarios_tmp', 'eventos','eventos_sesiones','idiomas_sistema','idiomas_sitio','incentivos','material_pop','novedades','parametros','perfiles','perfiles_usuarios','promociones','promociones_documentos','secciones','slider_home', 'tipos_contenidos','usuarios','zonas_geograficas');
-
+*/
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -119,7 +119,7 @@ $config['charset'] = 'utf-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

@@ -24,6 +24,12 @@ date_default_timezone_set("America/Santiago");
 $config['base_url'] = 'http://localhost'.$folder;
 
 
+
+
+
+
+
+
 switch ($_SERVER['SERVER_NAME']) {
         case "hunterdouglasonline.cl":
             $config['base_url'] = 'http://hunterdouglasonline.cl'.$folder;
@@ -146,7 +152,7 @@ $config['charset'] = 'utf-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

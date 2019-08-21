@@ -1,9 +1,18 @@
 <?php
 class Global_model extends CI_Model {
 		
-	
+    public function __construct() {
+        
+        
+        
+        parent::__construct();
+        $this->CFG = load_class('Config', 'core')       ;
+        $this->pais = $this->CFG->item('_pais_');
+    }
 	//	echo $this->db->last_query();
-	
+	private function _pais($col="localizacion",$db=null) {
+             $db->where($col,$this->pais);
+        }
 	public function get_rows($fields,$table,$where = NULL) { // array, string
 		$this->db->select($fields);
 		$q = $this->db->get_where($table, $where);	
@@ -134,7 +143,8 @@ class Global_model extends CI_Model {
 	}
 	
 	public function get_tipos_contenidos() {
-		$sql = "SELECT * FROM tipos_contenidos order by orden ASC";
+		$sql = "SELECT * FROM tipos_contenidos where localizacion like '".$this->pais."'"
+                        . " order by orden ASC";
 		$q = $this->db->query($sql);
 		return $q->result(); 
 		
@@ -243,7 +253,12 @@ class Global_model extends CI_Model {
 			//$this->db->join('administradores_accesos', 'administradores_accesos.codigo=administradores_menu.codigo');
 			//$arraywhere['administradores_accesos.usuario'] = $user;
 		endif;
-		$query = $this->db->get_where('administradores_menu',$arraywhere);
+                
+               
+		// $this->db->where("localizacion",$this->pais);
+                 $this->_pais("localizacion", $this->db);
+                 $query =$this->db->get_where('administradores_menu',$arraywhere);
+                $laquery=$this->db->last_query(); 
 		$data =$query->result();
 		// echo $this->db->last_query(); 
 		return $data;	 
@@ -258,6 +273,7 @@ class Global_model extends CI_Model {
 			//$this->db->join('administradores_accesos', 'administradores_accesos.codigo=administradores_menu.codigo');
 			//$arraywhere['administradores_accesos.usuario'] = $user;
 		endif;
+                $this->_pais("localizacion", $this->db);
 		$query = $this->db->get_where('administradores_menu_contenidos',$arraywhere);
 		$data =$query->result();
 		// echo $this->db->last_query(); 

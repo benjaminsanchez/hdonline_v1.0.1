@@ -40,12 +40,16 @@ class SystemEdit_model extends CI_Model {
 		if ($arrjoinkey[0] != NULL && $this->db->delete($arrjoinkey[0])):
 			if (count($values)>0): 
 			foreach ($values as $val):
+                            if($val!=""):
+                            $d=(int)$val;
+                            if(!is_string($d)): // Fix Bsanchez
 				$data = array(
 				$arrjoinkey[1] => $datakey[$arrjoinkey[1]] ,
 				$arrjoinkey[2] => $val
 				);
-				// print_r($data);
 				$this->db->insert($arrjoinkey[0], $data); 
+                                endif;
+                                endif;
 			endforeach;
 			endif;
 			return true;

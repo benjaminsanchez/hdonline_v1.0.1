@@ -24,8 +24,9 @@ function localizacion() {
                 
 		default:					$localizacion = 'cl'; break;
 	endswitch;
-	
-	return $localizacion;
+	 $CFG = load_class('Config', 'core')       ;
+       return  $CFG->item('_pais_');
+	//return $localizacion;
 }
 
 

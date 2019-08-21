@@ -67,7 +67,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'hd1onlin_sys', // <----
 	'password' => 'y2ZUA9Q6rHdivCtxIg', // <----
-	'database' => 'hd1onlin_sys', // <----
+	'database' => 'hd1onlin_des_hd1', // <----
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => TRUE,
@@ -81,5 +81,6 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE
+	'save_queries' => TRUE,
+        'port'=>3307
 );

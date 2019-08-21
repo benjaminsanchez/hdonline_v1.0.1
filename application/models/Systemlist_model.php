@@ -31,7 +31,18 @@ class SystemList_model extends CI_Model {
 				$this->db->where($key,$val);	
 			endforeach;
 		endif;
+                  $this->CFG = load_class('Config', 'core')       ;
+                  switch ($table):
+                      case 'usuarios':
+                          $eax=$table.".";
+                          break;
+                      default :
+                          $eax="";
+                          break;
+                  endswitch;
+                 $this->db->where($eax."localizacion",$this->CFG->item('_pais_'));
 		$q = $this->db->get_where($table, $where , $limit, $offset);
+                  $laq=$this->db->last_query();;
 		//echo $this->db->last_query();
 		
 		return  $q->result();

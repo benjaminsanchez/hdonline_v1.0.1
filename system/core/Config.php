@@ -354,6 +354,7 @@ class CI_Config {
 	public function set_item($item, $value)
 	{
 		$this->config[$item] = $value;
+                return $this;
 	}
 
 }

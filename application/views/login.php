@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $baseurl=trim(base_url(),'/'); ?>
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
 Version: 4.7.1
@@ -28,22 +29,22 @@ License: You must have a valid license purchased only from themeforest(the above
 <meta content="" name="author" />
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<link href="<?php echo base_url(); ?>/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL STYLES -->
-<link href="<?php echo base_url(); ?>/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
-<link href="<?php echo base_url(); ?>/assets/pages/css/login-5.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url(); ?>/assets/custom/css/custom.css?v=<?php echo date("YmdHis"); ?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/pages/css/login-5.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo $baseurl; ?>/assets/custom/css/custom.css?v=<?php echo date("YmdHis"); ?>" rel="stylesheet" type="text/css" />
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME LAYOUT STYLES -->
 <!-- END THEME LAYOUT STYLES -->
@@ -56,13 +57,13 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="user-login-5">
   <div class="row bs-reset">
     <div class="col-md-6 bs-reset mt-login-5-bsfix">
-      <div class="login-bg" style="background-image:url(<?php echo base_url(); ?>/assets/pages/img/login/bg1.jpg)"> <a href="<?php echo base_url(); ?> "> <img src="<?php echo $logoadmin_white; ?>"   alt=""/> </a> </div>
+      <div class="login-bg" style="background-image:url(<?php echo $baseurl; ?>/assets/pages/img/login/bg1.jpg)"> <a href="<?php echo $baseurl; ?> "> <img src="<?php echo $logoadmin_white; ?>"   alt=""/> </a> </div>
     </div>
     <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
       <div class="login-content">
         <h1>Bienvenidos a HunterDouglas Online</h1>
        <?php if (@$token != ""): ?>
-       <form action="<?php echo base_url(); ?>login_recuperar3" class="changepass-form" method="post">
+       <form action="<?php echo $baseurl; ?>login_recuperar3" class="changepass-form" method="post">
      
          <p> Ingrese su nueva clave </p>
           <div class="alert alert-danger <?php if (@$ewmsg == ""): echo 'display-hide'; endif?>" >
@@ -107,7 +108,7 @@ License: You must have a valid license purchased only from themeforest(the above
         </form>
        
        <?php else: ?>
-        <form action="<?php echo base_url(); ?>enviar_login" class="login-form" method="post">
+        <form action="<?php echo $baseurl; ?>/enviar_login" class="login-form" method="post">
         
           <div class="alert alert-danger <?php if (@$ewmsg == ""): echo 'display-hide'; endif?>" >
             <button class="close" data-close="alert"></button>
@@ -186,26 +187,26 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 <!-- END : LOGIN PAGE 5-1 --> 
 <!--[if lt IE 9]>
-<script src="<?php echo base_url(); ?>/assets/global/plugins/respond.min.js"></script>
-<script src="<?php echo base_url(); ?>/assets/global/plugins/excanvas.min.js"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/ie8.fix.min.js"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/respond.min.js"></script>
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/excanvas.min.js"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/ie8.fix.min.js"></script> 
 <![endif]--> 
 <!-- BEGIN CORE PLUGINS --> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/jquery.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/jquery.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> 
 <!-- END CORE PLUGINS --> 
 <!-- BEGIN PAGE LEVEL PLUGINS --> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script> 
-<script src="<?php echo base_url(); ?>/assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script> 
 <!-- END PAGE LEVEL PLUGINS --> 
 <!-- BEGIN THEME GLOBAL SCRIPTS --> 
-<script src="<?php echo base_url(); ?>/assets/global/scripts/app.min.js" type="text/javascript"></script> 
+<script src="<?php echo $baseurl; ?>/assets/global/scripts/app.min.js" type="text/javascript"></script> 
 <!-- END THEME GLOBAL SCRIPTS --> 
 <!-- BEGIN PAGE LEVEL SCRIPTS --> 
 <script language="javascript" type="text/javascript">
@@ -378,7 +379,7 @@ var Login = function() {
 	
     return {
         init: function() {
-            r(), $(".login-bg").backstretch(["<?php echo base_url(); ?>/assets/custom/img/login/bg1.jpg", "<?php echo base_url(); ?>/assets/custom/img/login/bg2.jpg", "<?php echo base_url(); ?>/assets/custom/img/login/bg3.jpg"], {
+            r(), $(".login-bg").backstretch(["<?php echo $baseurl; ?>/assets/custom/img/login/bg1.jpg", "<?php echo $baseurl; ?>/assets/custom/img/login/bg2.jpg", "<?php echo $baseurl; ?>/assets/custom/img/login/bg3.jpg"], {
                 fade: 1e3,
                 duration: 8e3
             }), $(".forget-form").hide(),  handleForgetPassword(),handleAssignPassword()

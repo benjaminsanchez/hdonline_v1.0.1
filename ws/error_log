@@ -1,0 +1,267 @@
+[21-Sep-2018 12:40:13 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:10
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(10): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(10): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 10
+[21-Sep-2018 12:40:52 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:10
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(10): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(10): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 10
+[21-Sep-2018 12:41:13 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://64.76.139.7:8086/wsingreso.asmx?wsdl' : failed to load external entity "https://64.76.139.7:8086/wsingreso.asmx?wsdl"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 2
+[21-Sep-2018 12:41:13 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://64.76.139.7:8086/wsingreso.asmx?wsdl' : failed to load external entity "https://64.76.139.7:8086/wsingreso.asmx?wsdl"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:2
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(2): SoapClient->SoapClient('https://64.76.1...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 2
+[21-Sep-2018 12:45:23 America/Los_Angeles] PHP Warning:  Missing argument 2 for ExampleClient::GetListaUsuariosDS(), called in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 33 and defined in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 37
+[21-Sep-2018 12:45:23 America/Los_Angeles] PHP Warning:  Missing argument 3 for ExampleClient::GetListaUsuariosDS(), called in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 33 and defined in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 37
+[21-Sep-2018 12:46:26 America/Los_Angeles] PHP Warning:  Missing argument 2 for ServiceClient::doPostRequest(), called in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 40 and defined in /home/softon5/public_html/apps/myhd.s1.cl/ws/ServiceClient.php on line 27
+[21-Sep-2018 12:49:05 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://64.76.139.7:8086/wsingreso.asmx?wsdl' : failed to load external entity "https://64.76.139.7:8086/wsingreso.asmx?wsdl"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[21-Sep-2018 12:49:05 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://64.76.139.7:8086/wsingreso.asmx?wsdl' : failed to load external entity "https://64.76.139.7:8086/wsingreso.asmx?wsdl"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:3
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(3): SoapClient->SoapClient('https://64.76.1...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[21-Sep-2018 12:49:18 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:11
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 11
+[21-Sep-2018 12:50:10 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:11
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 11
+[21-Sep-2018 12:50:30 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:11
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 11
+[21-Sep-2018 12:51:00 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:11
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 11
+[21-Sep-2018 12:51:31 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:11
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(11): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 11
+[21-Sep-2018 12:55:56 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:16:50 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:16:54 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:17:22 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:17:34 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:18:17 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:18:42 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:13
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(13): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 13
+[24-Sep-2018 08:19:05 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:14
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 14
+[24-Sep-2018 08:20:48 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx?sdl' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:20:48 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx?sdl' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:3
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(3): SoapClient->SoapClient('http://64.76.13...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:21:04 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:21:04 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:3
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(3): SoapClient->SoapClient('http://64.76.13...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:21:08 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:21:08 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:3
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(3): SoapClient->SoapClient('http://64.76.13...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:21:18 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:14
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 14
+[24-Sep-2018 08:22:01 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("GetListaUsuario") is not a valid method for this service in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:14
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->__call('GetListaUsuario', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->GetListaUsuario(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 14
+[24-Sep-2018 08:22:18 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:14
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(14): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 14
+[24-Sep-2018 08:23:53 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:19
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(19): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(19): SoapClient->GetListaUsuariosDS(Object(stdClass))
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 19
+[24-Sep-2018 08:24:00 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:19
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(19): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(19): SoapClient->GetListaUsuariosDS(Object(stdClass))
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 19
+[24-Sep-2018 08:24:53 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:20
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->GetListaUsuariosDS(Object(stdClass))
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:26:12 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:20
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->GetListaUsuariosDS(Object(stdClass))
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:27:14 America/Los_Angeles] PHP Fatal error:  Cannot use object of type SoapClient as array in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:27:18 America/Los_Angeles] PHP Fatal error:  Cannot use object of type SoapClient as array in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:27:35 America/Los_Angeles] PHP Fatal error:  Cannot use object of type SoapClient as array in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:27:37 America/Los_Angeles] PHP Fatal error:  Cannot use object of type SoapClient as array in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:28:09 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:20
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->GetListaUsuariosDS(Array)
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:30:35 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:20
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->__call('GetListaUsuario...', Array)
+#1 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(20): SoapClient->GetListaUsuariosDS(Object(stdClass))
+#2 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 20
+[24-Sep-2018 08:31:33 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:22
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(22): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 22
+[24-Sep-2018 08:34:40 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:34:40 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx' : Premature end of data in tag html line 3
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:3
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(3): SoapClient->SoapClient('http://64.76.13...')
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 3
+[24-Sep-2018 08:36:40 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:36:51 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:37:11 America/Los_Angeles] PHP Warning:  SoapClient::__soapCall() expects parameter 2 to be array, object given in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:39:35 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:41:33 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:41:50 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:44:22 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("GetListaUsuariosDSResponse") is not a valid method for this service in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:44:48 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("GetListaUsuariosDSResult") is not a valid method for this service in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:45:02 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:46:46 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[24-Sep-2018 08:51:16 America/Los_Angeles] PHP Fatal error:  Uncaught SoapFault exception: [Client] looks like we got no XML document in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php:30
+Stack trace:
+#0 /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php(30): SoapClient->__soapCall('GetListaUsuario...', Array)
+#1 {main}
+  thrown in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 30
+[05-Mar-2019 12:35:48 America/Los_Angeles] PHP Notice:  Undefined variable: sc in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 26
+[05-Mar-2019 12:35:48 America/Los_Angeles] PHP Fatal error:  Call to a member function __soapCall() on null in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 26
+[05-Mar-2019 12:41:17 America/Los_Angeles] PHP Notice:  Undefined variable: soapClient in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 28
+[05-Mar-2019 12:41:17 America/Los_Angeles] PHP Fatal error:  Call to a member function IngresaUsuario() on null in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws.php on line 28
+[05-Mar-2019 13:05:06 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Encoding: object has no 'paramIdPerfil' property in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws2.php on line 35
+[05-Mar-2019 13:05:27 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ')' in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws2.php on line 35
+[15-Mar-2019 12:24:58 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL' : failed to load external entity "http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws3.php on line 27
+[15-Mar-2019 12:25:20 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL' : failed to load external entity "http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws3.php on line 27
+[15-Mar-2019 12:27:22 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL' : failed to load external entity "http://10.20.14.128/PedidosWebService_Prueba/Authentication.asmx?WSDL"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/test_ws3.php on line 27

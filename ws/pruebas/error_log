@@ -1,0 +1,31 @@
+[08-Mar-2019 09:53:38 America/Los_Angeles] PHP Notice:  Undefined index: SML_usuario in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 26
+[08-Mar-2019 09:53:38 America/Los_Angeles] PHP Notice:  Undefined index: SML_clave in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 26
+[08-Mar-2019 09:54:56 America/Los_Angeles] PHP Notice:  Undefined index: SML_usuario in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 26
+[08-Mar-2019 09:54:56 America/Los_Angeles] PHP Notice:  Undefined index: SML_clave in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 26
+[08-Mar-2019 10:15:23 America/Los_Angeles] PHP Notice:  Undefined index: paramIdCliente in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 22
+[08-Mar-2019 10:18:10 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:19:23 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:21:35 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:31:01 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:38:22 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:39:30 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:39:49 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:40:41 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:41:19 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:42:00 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:42:17 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:42:47 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:43:22 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[08-Mar-2019 10:44:19 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[12-Mar-2019 05:16:28 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[12-Mar-2019 05:17:28 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[15-Mar-2019 12:06:54 America/Los_Angeles] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://64.76.139.7:8086/wsingreso.asmx?WSDL' : failed to load external entity "http://64.76.139.7:8086/wsingreso.asmx?WSDL"
+ in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 50
+[15-Mar-2019 12:07:29 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 10:30:46 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 14:49:06 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 14:49:11 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 14:49:15 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 14:49:23 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[21-Mar-2019 14:49:28 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 67
+[26-Mar-2019 11:37:06 America/Los_Angeles] PHP Notice:  Undefined variable: json in /home/softon5/public_html/apps/myhd.s1.cl/ws/pruebas/form_respuesta.php on line 72

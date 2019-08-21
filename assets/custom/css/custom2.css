@@ -1,0 +1,74 @@
+.underline{ text-decoration: underline; }
+a.grey{ color: #666; }
+.btn.submit{
+	border: 1px solid #ddd;
+	font-weight: 600;
+	padding: 7px 20px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%,#dddddd 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#dddddd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );	
+}
+.btn.submit:hover{
+	background: #fff;	
+}
+
+
+/* Sidebar */
+
+#sidebar .portlet{ background: #f3f3f3; }
+#sidebar .portlet .mt-checkbox > span{ background: #fff; }
+#sidebar .portlet .portlet-title{ font-weight: 600; }
+#sidebar .portlet .scroller .mt-checkbox{ margin-bottom: 5px; font-size: 13px; display: block; }
+#sidebar .portlet .scroller .mt-checkbox .help-inline{ padding: 0; font-size: 10px; }
+#sidebar .portlet a.grey{ font-size: 11px; margin-left: 3px; }
+
+/* Listado de archivos (upload) */
+
+.listado-archivos{ border-bottom: 1px solid #ddd;  }
+.listado-archivos div.item{ border-top: 1px solid #ddd; padding-top: 25px; }
+.listado-archivos div.item .check-primario span{ margin-top: 20px; }
+.listado-archivos div.icon{ }
+.listado-archivos div.icon i{ display: block; font-size: 50px; height: 50px; line-height: 50px; color: #999;  }
+.listado-archivos div.img{
+	position: relative;
+	z-index: 1;	
+}
+.listado-archivos div.img i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	margin-top: -7px;
+	margin-left: -7px;
+	color: #fff;	
+}
+.listado-archivos .bootstrap-tagsinput .tag{ background: #3598dc; }
+.listado-archivos .form-horizontal .control-label{ text-align: left; }
+.acciones-globales{ background: #F3F3F3; padding: 15px 15px 0; }
+.acciones-globales .mt-checkbox>span{
+	background: #fff;	
+}
+
+/* Incentivos */
+
+#incentivos .listado-archivos div.item{ border: 0; }
+
+/* Notificaciones */
+
+.pasos.mt-element-step .mt-step-col{ cursor: pointer; border-right: 1px solid #fff; }
+.pasos.mt-element-step .step-thin .mt-step-title{ margin-top: 5px; }
+.pasos.mt-element-step .step-thin .active{ background: #666 !important; cursor: default; }
+.pasos.mt-element-step .step-thin .active .mt-step-number{ color: #666 !important; }
+#notificaciones div.paso{ display: none; }
+#notificaciones .previsualizar{ padding-top: 60px; }
+#notificaciones .miniatura{ margin: 0 auto; }
+
+@media screen and (max-width: 960px) {
+	.listado-archivos div.item .input-small{ width: 120px !important; }
+	#notificaciones .previsualizar{ padding-top: 0px; }
+}
