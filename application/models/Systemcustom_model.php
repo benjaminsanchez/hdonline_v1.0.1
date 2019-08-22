@@ -509,6 +509,7 @@ class SystemCustom_model extends CI_Model {
 			$sql.= " AND (N.titulo LIKE '%".$this->db->escape_like_str($filtro_busqueda["txt"])."%')"; 
 		endif;
 		
+                $sql .= " AND N.localizacion = '". localizacion()."'";
 		// filtro vigencia 
 		if (@$filtro_busqueda["vigencia"] == "on"):
 			$sql.= " AND (N.vigencia_desde <= '".@date("Y-m-d")."' AND N.vigencia_hasta >= '".@date("Y-m-d")."')";
@@ -759,8 +760,9 @@ class SystemCustom_model extends CI_Model {
 					WHERE 
 					S.id_categoria = ".$this->db->escape($id_categoria)."
 					AND S.id_seccion_padre = 0  
-					AND CT.nivel = '1'
-					ORDER BY S.orden ASC 
+					AND CT.nivel = '1' 
+                                        AND S.localizacion = '". localizacion(). //fix localizacion
+                        "' ORDER BY S.orden ASC 
 					";
 		$q = $this->db->query($sql);
 		return $q->result(); 
@@ -1250,6 +1252,9 @@ class SystemCustom_model extends CI_Model {
 	
 	
 	public function get_categorias_padre_disponibles($id_categoria='',$nivel='') {
+            if($nivel==""):
+                $nivel=0;
+            endif;
 		$sql = "SELECT C.* FROM categorias C
 				INNER JOIN categorias_tipo CT ON (CT.id_categoria_tipo=C.id_categoria_tipo)
                 WHERE CT.nivel < ".$nivel." ";

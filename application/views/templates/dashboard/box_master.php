@@ -37,7 +37,7 @@ if ($total_secciones>0):
       </div>
       <div class="tabbable-line">
         <?php 
-	
+	$cnt=count(@$subseccion[@$mseccion->id_seccion]);
 	if (count(@$subseccion[@$mseccion->id_seccion])>0): $alto_bloque = "350"; ?>
         <ul class="nav nav-tabs slider-tab" id="master-tab<?php echo $mseccion->id_seccion; ?>">
           <li class="active"> <a href="#<?php echo $mseccion->url."-".$mseccion->id_seccion; ?>" data-toggle="tab" class="bold"> <?php echo $mseccion->nombre; ?></a> </li>

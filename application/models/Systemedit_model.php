@@ -24,7 +24,12 @@ class SystemEdit_model extends CI_Model {
 	}
 	
 	public function update_data($table,$datakey,$data) {
+            $dt=$data["id_seccion_padre"];
+             if(!isset($data["id_seccion_padre"])||$data["id_seccion_padre"]==""):
+                    $data["id_seccion_padre"]=(int)0;
+                endif;
 		$this->db->where($datakey);
+               
 		if ($this->db->update($table, $data)): 
 		
 			return true;
@@ -61,12 +66,28 @@ class SystemEdit_model extends CI_Model {
 	public function insert_data($table,$data) {	
 	//	print_r($data);
 	//	die();
+        switch ($table) {
+            case "categorias":
+               $data = $this->orden($data);
+                break;
+             case "secciones":
+               $data = $this->orden($data);
+                break;
+            default:
+                break;
+        }
+           
 		if ($this->db->insert($table, $data)): 
 			return true;
 		else:
 			return false;
 		endif; 	
-	}
+	}        private function orden($data) {
+             if(!isset($data['orden'])):
+                        $data['orden']="0";
+                    endif;
+                    return $data;
+        }
 	
 	public function insert_data_return_id($table,$data) {	
 	//	print_r($data);
