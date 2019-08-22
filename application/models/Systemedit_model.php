@@ -28,6 +28,13 @@ class SystemEdit_model extends CI_Model {
              if(!isset($data["id_seccion_padre"])||$data["id_seccion_padre"]==""):
                     $data["id_seccion_padre"]=(int)0;
                 endif;
+                
+                if($table=="slider_home"):
+                    unset($data["id_seccion_padre"]);
+                endif;
+                if(isset($data['imagen_principal'])):
+                    $data['imagen_principal']= trim($data['imagen_principal'],",");
+                endif;
 		$this->db->where($datakey);
                
 		if ($this->db->update($table, $data)): 
