@@ -390,7 +390,10 @@ class SystemEdit  extends CI_Controller {
 								foreach ($seleccionados as $idcat):
 									$datacategorias[$id] = $insertid->$incrementkey;
 									$datacategorias["id_categoria"] = $idcat;
-									$this->Systemedit_model->insert_data($tabla_categorias,$datacategorias);
+                                                                      if($idcat!=""):
+                                                                        $this->Systemedit_model->insert_data($tabla_categorias,$datacategorias);    
+                                                                        endif; 
+									
 								endforeach;
 							endif;
 						
@@ -710,7 +713,9 @@ class SystemEdit  extends CI_Controller {
 	
 	// definir el tipo de campo
 	private function getFieldView($name,$config,$LSI,$curAction) {
-		
+		if($name=="id_categoria"):
+                    $r=1;
+                endif;
 		$field_type = $config->mode;
 		$this->mydata["name"] = $name; 
 		$this->mydata["required"] = (@$config->null=="NO")? "required": ""; 
@@ -781,7 +786,9 @@ class SystemEdit  extends CI_Controller {
 				if ($config->fvalue=="table") : // cargar desde tabla 
 					$explodejoin = explode(",",$config->fjoin);
 					$wheretemp = (@$explodejoin[3]!='')?$explodejoin[3]:NULL;
-					
+					if($name=="id_categoria"):
+                                            $wheretemp.= " and CT.localizacion = '".localizacion()."'";
+                                        endif;
 					
 					// V2
 					if ($config->ftype == "special_select_categorias"):

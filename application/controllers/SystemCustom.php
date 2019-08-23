@@ -684,14 +684,18 @@ class SystemCustom  extends CI_Controller {
 				// actualizar las categorias (eliminar e insertar)
 				if (count($this->input->post("x_id_categoria_top"))):
 					$cat_top = $this->input->post("x_id_categoria_top");
+                                       // print_r($cat_top);die;
 					$wheredelete = array("id_categoria_sub"=>$x_id_categoria);
 					$this->Global_model->delete_data("categorias_sub",$wheredelete);
 					foreach ($cat_top as $cat):
+                                            
 						$datainsertcat["id_categoria_sub"] = $x_id_categoria;
 						$datainsertcat["id_categoria"] = $cat;
-						$this->Global_model->insert_data("categorias_sub",$datainsertcat);
-						
-					endforeach;				
+                                                if( $cat != ""):
+                                                $this->Global_model->insert_data("categorias_sub",$datainsertcat);
+						endif;
+					endforeach;	
+                                      //  die;
 				endif;
 			break;
 		endswitch;

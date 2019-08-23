@@ -228,6 +228,18 @@ class Global_model extends CI_Model {
 	public function insert_data_return_id($table,$data) {	
 	//	print_r($data);
 	//	die();
+            
+        switch ($table) {
+            case "categorias":
+                if(!isset($data["orden"])):
+                $data["orden"]=0;
+             //   $data["id_categoria_tipo"]="1";
+                endif;
+            break;
+
+            default:
+                break;
+        }
 		if ($this->db->insert($table, $data)): 
 			return $this->db->insert_id();
 		else:
@@ -636,14 +648,16 @@ class Global_model extends CI_Model {
 		 $finaldata = array();
 		$sql = "SELECT CAT.*, CT.* FROM categorias CAT 
 				INNER JOIN categorias_tipo CT ON (CT.id_categoria_tipo=CAT.id_categoria_tipo)
-				WHERE 1 ";
-	
+				WHERE 1" 
+                                ." AND CAT.localizacion='". localizacion()."' ";
+	//;
 		if ($nivel!=""): $sql.="	AND CT.nivel = ".$this->db->escape($nivel).""; endif;
 		$sql.= " GROUP BY CAT.id_categoria ";
 		$sql.= " ORDER BY CAT.orden ";
 		
 		//	echo $sql;
 		$q = $this->db->query($sql);
+              //  print_r($sql);//die;
 		$data =  $q->result(); 
 		if (count($data)>0):
 			foreach ($data as $row):

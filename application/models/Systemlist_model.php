@@ -36,6 +36,18 @@ class SystemList_model extends CI_Model {
                       case 'usuarios':
                           $eax=$table.".";
                           break;
+                      case 'alertas':
+                          $eax=$table.".";
+                          break;
+                       case 'tipos_contenidos':
+                          $eax=$table.".";
+                          break;
+                      case 'distribuidores':
+                          $eax=$table.".";
+                          break;
+                      case 'distribuidores_usuarios':
+                          $eax=$table.".";
+                          break;
                       default :
                           $eax="";
                           break;

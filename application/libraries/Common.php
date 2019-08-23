@@ -9,7 +9,7 @@ class Common
 	}
 	public function localizacion($data='') {
 		
-		$dominio = $_SERVER["HTTP_HOST"];
+		/*$dominio = $_SERVER["HTTP_HOST"];
 		
 		switch ($dominio):
 			case "myhd.s1.cl": 		$localizacion = 'cl'; break;
@@ -17,7 +17,20 @@ class Common
 			default:					$localizacion = 'cl'; break;
 		endswitch;
 		
-		return $localizacion;
+		//return $localizacion;
+                */
+                $dominio = $_SERVER["HTTP_HOST"];
+	
+	switch ($dominio):
+		case "myhd.s1.cl": 		$localizacion = 'cl'; break;
+		case "hunterdouglasonline.cl": 		$localizacion = 'cl'; break;
+                case "hdonline.com.co": 		$localizacion = 'co'; break;
+                case "hunterdouglasonline.com.ar": 		$localizacion = 'ar'; break;
+                
+		default:					$localizacion = 'cl'; break;
+	endswitch;
+	 $CFG = load_class('Config', 'core')       ;
+       return  $CFG->item('_pais_');
 	}
 	
 	public function distribuidores_usuarios($data='') {

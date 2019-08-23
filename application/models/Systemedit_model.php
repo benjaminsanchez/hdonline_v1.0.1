@@ -35,6 +35,12 @@ class SystemEdit_model extends CI_Model {
                 if(isset($data['imagen_principal'])):
                     $data['imagen_principal']= trim($data['imagen_principal'],",");
                 endif;
+                if($table=="alertas" || $table=="biblioteca"|| $table=="distribuidores"):
+                    unset($data["id_seccion_padre"]);
+                 unset($data["id_categoria"]);
+                 unset($data["tipo"]);
+                 
+                endif;
 		$this->db->where($datakey);
                
 		if ($this->db->update($table, $data)): 

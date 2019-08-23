@@ -891,6 +891,7 @@ class timthumb {
 		
 		foreach ($sub_directories as $sub){
 			$base .= $sub . '/';
+                        $base= str_replace("timthumb.php", "", $base);
 			$this->debug(3, "Trying file as: " . $base . $src);
 			if(file_exists($base . $src)){
 				$this->debug(3, "Found file as: " . $base . $src);
