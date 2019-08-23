@@ -80,6 +80,10 @@ class SystemEdit_model extends CI_Model {
              case "secciones":
                $data = $this->orden($data);
                 break;
+            
+            case "slider_home":
+                $data['imagen_principal']= trim($data['imagen_principal'],",");
+                break;
             default:
                 break;
         }

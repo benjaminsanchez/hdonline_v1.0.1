@@ -1,9 +1,9 @@
 RewriteEngine on
 
-Rewriterule ^imgtmp/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)-([0-9]+)/(.+)$ assets/custom/php/timthumb.php?src=../img/$1/$5&w=$2&h=$3&zc=$4
+#Rewriterule ^imgtmp/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)-([0-9]+)/(.+)$ assets/custom/php/timthumb.php?src=../img/$1/$5&w=$2&h=$3&zc=$4
 
 
-Rewriterule ^img/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)-([0-9]+)/([a-zA-Z0-9_-]+)/(.+)$ assets/custom/php/timthumb.php?src=../../../uploads/$1/$5/$6&w=$2&h=$3&zc=$4
+#Rewriterule ^img/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)-([0-9]+)/([a-zA-Z0-9_-]+)/(.+)$ assets/custom/php/timthumb.php?src=../../../uploads/$1/$5/$6&w=$2&h=$3&zc=$4
  
 Rewriterule ^list/distribuidores_usuarios_tmp$ /listc/distribuidores_usuarios [L,R=301]
 
