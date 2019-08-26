@@ -48,7 +48,8 @@ class SystemEdit_model extends CI_Model {
 			return true;
 		else:
 			return false;
-		endif; 	
+		endif;
+                
 	}
 	
 	public function multijoin_insert_data($joinkey,$datakey,$values) {

@@ -95,11 +95,13 @@ if (@$configcrud->config->export != ""):
                                     
                                   </tr>
                                 </thead>
-                                <?php foreach($records as $zona): ?>
+                                <?php foreach($records as $zona): 
+                                    $n_z= str_replace(" ", "_", $zona["data"]->nombre);
+                                    ?>
                                 
                                   <tbody >
                                 
-                                <tr id="data-1" role="row">
+                                <tr id="data-1" role="row" id="<?php echo $n_z;?>">
                                   <td class="bold handle" > <?php echo $zona["data"]->nombre; ?></td>
                                   <td class="ewTableTdOptions" nowrap="nowrap" align="right"><a href="<?php echo base_url(); ?>edit/zonas_geograficas/?id_zona_geografica=<?php echo $zona["data"]->id_zona_geografica; ?>" class="btn btn-sm blue btn-outline" title=" Editar"><i class="fa fa-pencil"></i> </a> <a href="<?php echo base_url(); ?>delete/zonas_geograficas/?id_zona_geografica=<?php echo $zona["data"]->id_zona_geografica; ?>" class="btn btn-sm grey-cascade btn-outline" title=" Eliminar"><i class="fa fa-trash-o"></i></a> </td>
                                 </tr>

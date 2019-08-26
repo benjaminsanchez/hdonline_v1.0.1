@@ -23,6 +23,24 @@ class Global_model extends CI_Model {
 	
 	public function get_rows_select($fields,$table,$where = NULL) { // string (coma separated), string
 		$this->db->select($fields);
+                switch ($table) {
+                    case "zonas_geograficas":
+                        if(!isset($where)):
+                             $where.="localizacion='".localizacion()."'";
+                       
+                    else:
+                             $where.=" AND localizacion='".localizacion()."'";
+                    endif;
+              
+                           
+ 
+                        
+                        break;
+
+                    default:
+                        break;
+                }
+               
 		$q = $this->db->get_where($table, $where);	
 		$rows =  $q->result();
 		//echo $this->db->last_query()."";
